@@ -1,0 +1,101 @@
+<!DOCTYPE html>    
+<html>    
+<head> 
+    <style>
+        h1 {
+          text-align: center;
+        }
+    </style>   
+    <title>Reg Form</title>    
+</head>    
+<body bgcolor = "Cyan">      
+    <hr>  
+    <link rel="stylesheet" href="styles.css">  
+    <center><form method="" action="" name="reg_form" onsubmit="return validate()" > 
+        <h1>SynerD</h1>   
+        <h2>Registration Form</h2>    
+        <table>    
+            <tr>
+                <td><label>Username: </label></td>
+                <td>
+                    <input type="text" maxlength="8" placeholder="Username" />
+                    </td>
+</tr>
+<tr>
+    <td><label>Password: </label></td>
+<td>
+    <input type="password" id="pwd" name="pwd" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{1,8}">
+</td>
+</tr>
+            <tr>    
+                <td><label>First Name: </label></td>    
+                <td>    
+                    <input type="text" name="fname" placeholder="First Name">    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Last Name: </label></td>    
+                <td>    
+                    <input type="text" name="lname" placeholder="Last Name">    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Address: </label></td>    
+                <td>    
+                    <input type="text" size="50" name="address" placeholder="Address">    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Gender: </label></td>    
+                <td>    
+                    <input type="radio" name="gender" value="male">Male    
+                    <input type="radio" name="gender" value="female">Female 
+                    <input type="radio" name="gender" value="other">Other
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Email Id: </label></td>    
+                <td>    
+                    <input type="text" name="email" placeholder="example@gmail.com">    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Mobile: </label></td>    
+                <td>    
+                    <input type="number" name="mobile">    
+                </td>    
+            </tr>    
+            <tr>    
+            <td><label>Country of Origin: </label></td>    
+                <td>    
+                    <select name="Country Of Origin">    
+                        <option value="select country">select country</option>    
+                        <option value="China">China</option>    
+                        <option value="India">India</option>    
+                        <option value="United States">United States</option>    
+                        <option value="Canada">Canada</option>    
+                    </select>    
+                </td>    
+            </tr>    
+            <tr>  
+       
+            <td><label>Date of Birth: </label></td>
+            <td>
+            <input type="date"><br>
+            </td>
+            </tr>
+
+                <td>    
+                    <input type="submit" name="submit" value="Submit">    
+                    <input type="reset" name="reset" value="Reset">    
+                </td>    
+            </tr>     
+            
+
+
+  </form></center>
+
+        </table>    
+    </form>    
+</body>    
+</html> 
